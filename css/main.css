@@ -1,1 +1,92 @@
+/* RESET – her tarayıcı aynı davransın */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* GENEL AYARLAR */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;      /* koyu arka plan */
+  color: #e5e7eb;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ANA KUTU */
+.container {
+  background: #020617;
+  padding: 24px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+/* BAŞLIK */
+h1 {
+  text-align: center;
+  margin-bottom: 14px;
+  color: #38bdf8;
+}
+
+/* KURALLAR METNİ */
+.rules {
+  font-size: 13px;
+  margin-bottom: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* INPUTLAR */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+input:focus {
+  border-color: #38bdf8;
+}
+
+/* CHECKBOX */
+.checkbox {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* BUTON */
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* TELEFON UYUM */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+  }
+  }
