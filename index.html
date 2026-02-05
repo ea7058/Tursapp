@@ -3,25 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>TurksApp - Kayıt</title>
+
+  <!-- CSS BAĞLANTI -->
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+  <div class="container">
 
-<h1>TurksApp</h1>
+    <h1>TurksApp</h1>
 
-<p><b>Kurallar:</b> Küfür yok, spam yok, rahatsız etmek yok.</p>
+    <div class="rules">
+      Küfür yok<br>
+      Spam yok<br>
+      Rahatsız etmek yok<br>
+      Admin kararları kesindir
+    </div>
 
-<input id="username" placeholder="Kullanıcı adı"><br>
-<input id="password" type="password" placeholder="Şifre"><br>
-<input id="password2" type="password" placeholder="Şifre tekrar"><br>
+    <input id="username" placeholder="Kullanıcı adı">
+    <input id="password" type="password" placeholder="Şifre">
+    <input id="password2" type="password" placeholder="Şifre tekrar">
 
-<label>
-  <input type="checkbox" id="rules">
-  Kuralları kabul ediyorum
-</label><br><br>
+    <div class="checkbox">
+      <input type="checkbox" id="rules">
+      <label>Kuralları kabul ediyorum</label>
+    </div>
 
-<button onclick="register()">Kayıt Ol</button>
+    <button onclick="register()">Kayıt Ol</button>
 
-<script src="js/register.js"></script>
+  </div>
+
+  <!-- JS BAĞLANTI -->
+  <script src="js/register.js"></script>
 </body>
 </html>
